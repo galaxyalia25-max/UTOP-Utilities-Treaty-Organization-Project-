@@ -1,0 +1,18 @@
+Requirements:
+- Python 3.9 or newer
+- customtkinter
+- Optional: zxcvbn
+
+Install:
+1) python -m venv .venv
+2) .venv\Scripts\activate
+3) pip install customtkinter zxcvbn
+
+Run:
+1) Activate the virtual environment if not already active
+2) python password_strength_checker.py
+
+Notes:
+- All password checks are performed locally on your device.
+- Passwords are never logged, saved, or transmitted anywhere.
+
