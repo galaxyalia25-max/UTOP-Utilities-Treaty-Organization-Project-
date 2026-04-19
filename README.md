@@ -1,43 +1,125 @@
-# OP (Utilities Treaty Organization Project)
+# UTOP (Utilities Treaty Organization Project)
 
-A collection of lightweight Windows utilities designed to improve system performance, remove unnecessary bloat, and keep your PC clean and efficient.
+A collection of Python-based Windows utility tools designed to improve system awareness, productivity, and basic maintenance through lightweight, local applications.
 
-## Features
+UTOP combines multiple standalone utilities into one unified project focused on clarity, control, and practicality.
 
-* Windows 11 Debloater (removes preinstalled apps and unnecessary services)
-* Windows Cleaner (cleans temporary files and unused data)
-* Simple UI built with CustomTkinter
-* Lightweight and fast
+---
 
-## ⚠️ Warning
+## 🧰 Included Tools
 
-These tools make system-level changes, including modifying system settings and removing built-in Windows components.
+### 🖥️ PC Health Dashboard
 
-**Use at your own risk.**
+A real-time system monitoring tool that provides:
 
-Before running:
+* Live CPU and memory usage graphs
+* Disk usage per drive
+* Running processes with CPU/RAM usage
+* Startup programs (Registry + Startup folders)
+* System uptime and OS information
 
-* Create a system restore point
-* Back up important files
-* Review the script to understand what it does
+---
 
-## Requirements
+### 📁 Office File Organizer
 
-* Python 3.x → https://www.python.org/
+A file management utility that:
 
-## Dependencies
+* Scans Desktop and Downloads for Office documents
+* Copies them into a dedicated folder
+* Creates a ZIP archive for easy storage and transfer
+* Handles duplicate filenames safely
 
-Install required packages:
+---
 
-pip install customtkinter
-pip install cryptography
+### 🔐 Password Strength Checker
 
+A local password analysis tool that:
 
-## Notes
+* Evaluates password strength in real time
+* Provides improvement suggestions
+* Estimates entropy (password randomness)
+* Optionally uses advanced analysis via `zxcvbn`
+* Runs fully offline with no data transmission
 
-* Some features may require administrator privileges
-* Tested on Windows 11 (results may vary on other versions)
+---
 
-## Author
+### 🧹 Windows Cleanup / Debloat Utilities (Experimental)
 
-Made by WindowsPlayz_
+System optimization tools that may:
+
+* Remove temporary files
+* Modify startup entries
+* Disable telemetry and tracking features
+* Manage system services and apps
+* Perform registry changes for optimization
+
+⚠️ These tools perform system-level changes and should be used carefully.
+
+---
+
+## ⚙️ Requirements
+
+* Python 3.8+
+* Windows OS
+
+---
+
+## 📦 Dependencies
+
+Install required libraries:
+
+```bash id="t7k3pa"
+pip install psutil matplotlib customtkinter cryptography
+```
+
+---
+
+## 🚀 Usage
+
+Each tool runs independently:
+
+```bash id="c8q1zd"
+python dashboard.py
+python office_organizer.py
+python password_checker.py
+python debloater.py
+```
+
+---
+
+## ⚠️ Important Warning
+
+Some UTOP tools:
+
+* Modify system registry
+* Remove system files or apps
+* Disable Windows services/features
+
+These actions can affect system stability if misused.
+
+**Always review code before running and ensure you understand its behavior.**
+
+Creating a system restore point is strongly recommended before using cleanup utilities.
+
+---
+
+## 🧠 Project Goals
+
+UTOP is built around:
+
+* Lightweight, single-purpose utilities
+* Local-first processing (no cloud dependency)
+* Transparency in system operations
+* Practical tools for everyday Windows use
+
+---
+
+## 🖥️ Platform Support
+
+* Windows only (uses Windows-specific APIs like `winreg`)
+
+---
+
+## 👤 Author
+
+Made by WindowsPlayz_ with love ❤️
