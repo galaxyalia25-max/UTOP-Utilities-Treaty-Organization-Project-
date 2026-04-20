@@ -12,11 +12,25 @@ UTOP combines multiple standalone utilities into one unified project focused on 
 
 A real-time system monitoring tool that provides:
 
-* Live CPU and memory usage graphs
-* Disk usage per drive
-* Running processes with CPU/RAM usage
-* Startup programs (Registry + Startup folders)
-* System uptime and OS information
+- Live CPU and memory usage graphs  
+- Disk usage per drive  
+- Running processes with CPU/RAM usage  
+- Startup programs (Registry + Startup folders)  
+- System uptime and OS information  
+
+---
+
+### 🔍 Spotlight Search (Windows Launcher)
+
+A fast, keyboard-driven app launcher inspired by macOS Spotlight:
+
+- Instantly search installed apps  
+- Fuzzy search (partial and flexible matching)  
+- Clean floating UI  
+- Launch apps with Enter  
+- Global hotkey (**Ctrl + Space**)  
+- System tray integration  
+- Automatically scans Start Menu shortcuts  
 
 ---
 
@@ -24,10 +38,10 @@ A real-time system monitoring tool that provides:
 
 A file management utility that:
 
-* Scans Desktop and Downloads for Office documents
-* Copies them into a dedicated folder
-* Creates a ZIP archive for easy storage and transfer
-* Handles duplicate filenames safely
+- Scans Desktop and Downloads for Office documents  
+- Copies them into a dedicated folder  
+- Creates a ZIP archive for easy storage and transfer  
+- Handles duplicate filenames safely  
 
 ---
 
@@ -35,11 +49,11 @@ A file management utility that:
 
 A local password analysis tool that:
 
-* Evaluates password strength in real time
-* Provides improvement suggestions
-* Estimates entropy (password randomness)
-* Optionally uses advanced analysis via `zxcvbn`
-* Runs fully offline with no data transmission
+- Evaluates password strength in real time  
+- Provides improvement suggestions  
+- Estimates entropy (password randomness)  
+- Optionally uses advanced analysis via `zxcvbn`  
+- Runs fully offline with no data transmission  
 
 ---
 
@@ -47,11 +61,11 @@ A local password analysis tool that:
 
 System optimization tools that may:
 
-* Remove temporary files
-* Modify startup entries
-* Disable telemetry and tracking features
-* Manage system services and apps
-* Perform registry changes for optimization
+- Remove temporary files  
+- Modify startup entries  
+- Disable telemetry and tracking features  
+- Manage system services and apps  
+- Perform registry changes for optimization  
 
 ⚠️ These tools perform system-level changes and should be used carefully.
 
@@ -59,31 +73,15 @@ System optimization tools that may:
 
 ## ⚙️ Requirements
 
-* Python 3.8+
-* Windows OS
+- Python 3.8+  
+- Windows OS  
 
 ---
 
 ## 📦 Dependencies
 
 Install required libraries:
-
-```bash id="t7k3pa"
-pip install psutil matplotlib customtkinter cryptography
-```
-
----
-
-## 🚀 Usage
-
-Each tool runs independently:
-
-```bash id="c8q1zd"
-python dashboard.py
-python office_organizer.py
-python password_checker.py
-python debloater.py
-```
+pip install psutil matplotlib customtkinter cryptography PyQt6 pynput pywin32
 
 ---
 
@@ -91,9 +89,9 @@ python debloater.py
 
 Some UTOP tools:
 
-* Modify system registry
-* Remove system files or apps
-* Disable Windows services/features
+- Modify system registry  
+- Remove system files or apps  
+- Disable Windows services/features  
 
 These actions can affect system stability if misused.
 
@@ -107,16 +105,16 @@ Creating a system restore point is strongly recommended before using cleanup uti
 
 UTOP is built around:
 
-* Lightweight, single-purpose utilities
-* Local-first processing (no cloud dependency)
-* Transparency in system operations
-* Practical tools for everyday Windows use
+- Lightweight, single-purpose utilities  
+- Local-first processing (no cloud dependency)  
+- Transparency in system operations  
+- Practical tools for everyday Windows use  
 
 ---
 
 ## 🖥️ Platform Support
 
-* Windows only (uses Windows-specific APIs like `winreg`)
+- Windows only (uses Windows-specific APIs like `winreg`, `win32com`)
 
 ---
 
