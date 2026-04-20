@@ -1,114 +1,98 @@
-# UTOP (Utilities Treaty Organization Project)
+UTOP (Utilities Treaty Organization Project)
 
-A collection of Python-based Windows utility tools designed to improve system awareness, productivity, and basic maintenance through lightweight, local applications.
+A collection of Python-based Windows utilities focused on system insight, productivity, and lightweight maintenance.
 
-UTOP combines multiple standalone utilities into one unified project focused on clarity, control, and practicality.
+UTOP brings together multiple standalone tools into one cohesive project built around simplicity, performance, and local-first design.
 
----
+🧰 Included Tools
+🖥️ PC Health Dashboard
 
-## 🧰 Included Tools
+A real-time system monitoring tool:
 
-### 🖥️ PC Health Dashboard
+Live CPU and memory usage graphs
+Disk usage per drive
+Running processes with CPU/RAM usage
+Startup programs (Registry + Startup folders)
+System uptime and OS details
+🔍 Spotlight Search (App Launcher)
 
-A real-time system monitoring tool that provides:
+A fast, keyboard-driven Windows launcher inspired by Spotlight:
 
-* Live CPU and memory usage graphs
-* Disk usage per drive
-* Running processes with CPU/RAM usage
-* Startup programs (Registry + Startup folders)
-* System uptime and OS information
+Search installed apps instantly
+Fuzzy matching (partial & flexible search)
+Minimal floating UI
+Launch apps with Enter
+Global hotkey: Ctrl + Space
+Runs in system tray
+Auto-indexes Start Menu shortcuts
 
----
+Designed to be fast, minimal, and distraction-free.
 
-### 📁 Office File Organizer
+📁 Office File Organizer
 
-A file management utility that:
+A simple file organization utility:
 
-* Scans Desktop and Downloads for Office documents
-* Copies them into a dedicated folder
-* Creates a ZIP archive for easy storage and transfer
-* Handles duplicate filenames safely
+Scans Desktop & Downloads for Office files
+Copies them into a structured folder
+Creates a ZIP archive for backup or sharing
+Handles duplicate filenames safely
+🔐 Password Strength Checker
 
----
+A local password analysis tool:
 
-### 🔐 Password Strength Checker
+Real-time strength evaluation
+Suggestions for stronger passwords
+Entropy estimation
+Optional advanced analysis (zxcvbn)
+Fully offline (no data leaves your system)
+🧹 Cleanup / Debloat Utilities (Experimental)
 
-A local password analysis tool that:
+Advanced system utilities that can:
 
-* Evaluates password strength in real time
-* Provides improvement suggestions
-* Estimates entropy (password randomness)
-* Optionally uses advanced analysis via `zxcvbn`
-* Runs fully offline with no data transmission
+Remove temporary files
+Modify startup entries
+Disable telemetry features
+Manage services and apps
+Apply registry optimizations
 
----
+⚠️ These tools interact with core Windows systems and should be used with caution.
 
-### 🧹 Windows Cleanup / Debloat Utilities (Experimental)
+⚙️ Requirements
+Python 3.8 or newer
+Windows OS
+📦 Dependencies
 
-System optimization tools that may:
+Install everything with:
 
-* Remove temporary files
-* Modify startup entries
-* Disable telemetry and tracking features
-* Manage system services and apps
-* Perform registry changes for optimization
+pip install psutil matplotlib customtkinter cryptography PyQt6 pynput pywin32
+Optional
+pip install zxcvbn
+⚠️ Important Notice
 
-⚠️ These tools perform system-level changes and should be used carefully.
+Some tools in this project:
 
----
+Modify the Windows Registry
+Disable system services or features
+Remove files or applications
 
-## ⚙️ Requirements
+Incorrect usage may cause system instability.
 
-* Python 3.8+
-* Windows OS
+It is strongly recommended to:
 
----
-
-## 📦 Dependencies
-
-Install required libraries:
-
-```bash id="t7k3pa"
-pip install psutil matplotlib customtkinter cryptography
-```
-
----
-
----
-
-## ⚠️ Important Warning
-
-Some UTOP tools:
-
-* Modify system registry
-* Remove system files or apps
-* Disable Windows services/features
-
-These actions can affect system stability if misused.
-
-**Always review code before running and ensure you understand its behavior.**
-
-Creating a system restore point is strongly recommended before using cleanup utilities.
-
----
-
-## 🧠 Project Goals
+Review the code before running
+Create a system restore point
+Use experimental tools carefully
+🧠 Design Principles
 
 UTOP is built around:
 
-* Lightweight, single-purpose utilities
-* Local-first processing (no cloud dependency)
-* Transparency in system operations
-* Practical tools for everyday Windows use
+Lightweight tools (no unnecessary overhead)
+Local-first execution (no cloud dependency)
+Transparency (clear, understandable behavior)
+Practicality (real everyday usefulness)
+🖥️ Platform Support
+Windows only
+Uses Windows-specific APIs (winreg, win32com, etc.)
+👤 Author
 
----
-
-## 🖥️ Platform Support
-
-* Windows only (uses Windows-specific APIs like `winreg`)
-
----
-
-## 👤 Author
-
-Made by WindowsPlayz_ with love ❤️
+Created by WindowsPlayz_
