@@ -1,98 +1,125 @@
-UTOP (Utilities Treaty Organization Project)
+# UTOP (Utilities Treaty Organization Project)
 
-A collection of Python-based Windows utilities focused on system insight, productivity, and lightweight maintenance.
+A collection of Python-based Windows utility tools designed to improve system awareness, productivity, and basic maintenance through lightweight, local applications.
 
-UTOP brings together multiple standalone tools into one cohesive project built around simplicity, performance, and local-first design.
+UTOP combines multiple standalone utilities into one unified project focused on clarity, control, and practicality.
 
-🧰 Included Tools
-🖥️ PC Health Dashboard
+---
 
-A real-time system monitoring tool:
+## 🧰 Included Tools
 
-Live CPU and memory usage graphs
-Disk usage per drive
-Running processes with CPU/RAM usage
-Startup programs (Registry + Startup folders)
-System uptime and OS details
-🔍 Spotlight Search (App Launcher)
+### 🖥️ PC Health Dashboard
 
-A fast, keyboard-driven Windows launcher inspired by Spotlight:
+A real-time system monitoring tool that provides:
 
-Search installed apps instantly
-Fuzzy matching (partial & flexible search)
-Minimal floating UI
-Launch apps with Enter
-Global hotkey: Ctrl + Space
-Runs in system tray
-Auto-indexes Start Menu shortcuts
+* Live CPU and memory usage graphs
+* Disk usage per drive
+* Running processes with CPU/RAM usage
+* Startup programs (Registry + Startup folders)
+* System uptime and OS information
 
-Designed to be fast, minimal, and distraction-free.
+---
 
-📁 Office File Organizer
+### 📁 Office File Organizer
 
-A simple file organization utility:
+A file management utility that:
 
-Scans Desktop & Downloads for Office files
-Copies them into a structured folder
-Creates a ZIP archive for backup or sharing
-Handles duplicate filenames safely
-🔐 Password Strength Checker
+* Scans Desktop and Downloads for Office documents
+* Copies them into a dedicated folder
+* Creates a ZIP archive for easy storage and transfer
+* Handles duplicate filenames safely
 
-A local password analysis tool:
+---
 
-Real-time strength evaluation
-Suggestions for stronger passwords
-Entropy estimation
-Optional advanced analysis (zxcvbn)
-Fully offline (no data leaves your system)
-🧹 Cleanup / Debloat Utilities (Experimental)
+### 🔐 Password Strength Checker
 
-Advanced system utilities that can:
+A local password analysis tool that:
 
-Remove temporary files
-Modify startup entries
-Disable telemetry features
-Manage services and apps
-Apply registry optimizations
+* Evaluates password strength in real time
+* Provides improvement suggestions
+* Estimates entropy (password randomness)
+* Optionally uses advanced analysis via `zxcvbn`
+* Runs fully offline with no data transmission
 
-⚠️ These tools interact with core Windows systems and should be used with caution.
+---
 
-⚙️ Requirements
-Python 3.8 or newer
-Windows OS
-📦 Dependencies
+### 🧹 Windows Cleanup / Debloat Utilities (Experimental)
 
-Install everything with:
+System optimization tools that may:
 
-pip install psutil matplotlib customtkinter cryptography PyQt6 pynput pywin32
-Optional
-pip install zxcvbn
-⚠️ Important Notice
+* Remove temporary files
+* Modify startup entries
+* Disable telemetry and tracking features
+* Manage system services and apps
+* Perform registry changes for optimization
 
-Some tools in this project:
+⚠️ These tools perform system-level changes and should be used carefully.
 
-Modify the Windows Registry
-Disable system services or features
-Remove files or applications
+---
 
-Incorrect usage may cause system instability.
+## ⚙️ Requirements
 
-It is strongly recommended to:
+* Python 3.8+
+* Windows OS
 
-Review the code before running
-Create a system restore point
-Use experimental tools carefully
-🧠 Design Principles
+---
+
+## 📦 Dependencies
+
+Install required libraries:
+
+```bash id="t7k3pa"
+pip install psutil matplotlib customtkinter cryptography
+```
+
+---
+
+## 🚀 Usage
+
+Each tool runs independently:
+
+```bash id="c8q1zd"
+python dashboard.py
+python office_organizer.py
+python password_checker.py
+python debloater.py
+```
+
+---
+
+## ⚠️ Important Warning
+
+Some UTOP tools:
+
+* Modify system registry
+* Remove system files or apps
+* Disable Windows services/features
+
+These actions can affect system stability if misused.
+
+**Always review code before running and ensure you understand its behavior.**
+
+Creating a system restore point is strongly recommended before using cleanup utilities.
+
+---
+
+## 🧠 Project Goals
 
 UTOP is built around:
 
-Lightweight tools (no unnecessary overhead)
-Local-first execution (no cloud dependency)
-Transparency (clear, understandable behavior)
-Practicality (real everyday usefulness)
-🖥️ Platform Support
-Windows only
-Uses Windows-specific APIs (winreg, win32com, etc.)
-👤 Author
+* Lightweight, single-purpose utilities
+* Local-first processing (no cloud dependency)
+* Transparency in system operations
+* Practical tools for everyday Windows use
 
-Created by WindowsPlayz_
+---
+
+## 🖥️ Platform Support
+
+* Windows only (uses Windows-specific APIs like `winreg`)
+
+---
+
+## 👤 Author
+
+Made by WindowsPlayz_ with love ❤️
